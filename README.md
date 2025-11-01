@@ -6,10 +6,10 @@ This project presents an innovative and robust method for **digital document aut
 
 ### Key Concepts
 
-* [cite_start]**Dynamic Watermark:** The watermark is generated from the Shannon entropy of a scene photograph, ensuring each document is signed with a unique, time-specific, one-time digital signature[cite: 15, 27, 53].
-* [cite_start]**SVD Robustness:** Singular Value Decomposition (SVD) is used for embedding, as it modifies the document's spectral properties without noticeable visual distortion, providing mathematical reliability[cite: 16, 24, 102].
-* [cite_start]**PCA Compression:** Principal Component Analysis (PCA) is applied to the high-dimensional entropy data to create a compact, 50-bit binary watermark, ensuring computational efficiency[cite: 73, 74].
-* [cite_start]**Authentication:** Verification is achieved by comparing the extracted watermark's Bit Accuracy against a **90% threshold**[cite: 154].
+* **Dynamic Watermark:** The watermark is generated from the Shannon entropy of a scene photograph, ensuring each document is signed with a unique, time-specific, one-time digital signature[cite: 15, 27, 53].
+* **SVD Robustness:** Singular Value Decomposition (SVD) is used for embedding, as it modifies the document's spectral properties without noticeable visual distortion, providing mathematical reliability[cite: 16, 24, 102].
+* **PCA Compression:** Principal Component Analysis (PCA) is applied to the high-dimensional entropy data to create a compact, 50-bit binary watermark, ensuring computational efficiency[cite: 73, 74].
+* **Authentication:** Verification is achieved by comparing the extracted watermark's Bit Accuracy against a **90% threshold**[cite: 154].
 
 ---
 
