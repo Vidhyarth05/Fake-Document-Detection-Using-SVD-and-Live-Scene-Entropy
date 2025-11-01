@@ -19,17 +19,17 @@ The entire authentication process is modularized and orchestrated by the `main.m
 
 | Stage | Function | Description |
 | :--- | :--- | :--- |
-| **1. Entropy Extraction** | `entropy_extraction.m` | [cite_start]Calculates the Shannon entropy for $8 \times 8$ blocks of a $256 \times 256$ grayscale scene image, resulting in a $1 \times 1024$ vector[cite: 66, 71]. |
-| **2. Watermark Generation** | `generate_watermark.m` | [cite_start]Uses PCA to compress the $1 \times 1024$ entropy vector, extracts the first 50 components, and converts them to a **$1 \times 50$ binary watermark**[cite: 73, 91, 95]. |
-| **3. Watermark Embedding** | `embed_watermark.m` | [cite_start]Performs SVD on the document $D = USV^T$ and modifies the first 50 singular values using additive modulation: $\tilde{\sigma}_{i}=\sigma_{i}+\alpha\cdot w_{i}$[cite: 105, 111]. [cite_start]The **Original $S$ values are saved** for verification[cite: 108, 122]. |
-| **4. Authenticity Verification** | `verify_document.m` | [cite_start]Extracts the watermark by calculating the difference between the test document's singular values ($S_t$) and the saved original ones ($S_{original}$)[cite: 126, 127]. |
+| **1. Entropy Extraction** | `entropy_extraction.m` | Calculates the Shannon entropy for $8 \times 8$ blocks of a $256 \times 256$ grayscale scene image, resulting in a $1 \times 1024$ vector[cite: 66, 71]. |
+| **2. Watermark Generation** | `generate_watermark.m` | Uses PCA to compress the $1 \times 1024$ entropy vector, extracts the first 50 components, and converts them to a **$1 \times 50$ binary watermark**[cite: 73, 91, 95]. |
+| **3. Watermark Embedding** | `embed_watermark.m` | Performs SVD on the document $D = USV^T$ and modifies the first 50 singular values using additive modulation: $\tilde{\sigma}_{i}=\sigma_{i}+\alpha\cdot w_{i}$[cite: 105, 111]. [cite_start]The **Original $S$ values are saved** for verification[cite: 108, 122]. |
+| **4. Authenticity Verification** | `verify_document.m` | Extracts the watermark by calculating the difference between the test document's singular values ($S_t$) and the saved original ones ($S_{original}$)[cite: 126, 127]. |
 
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-* [cite_start]**MATLAB** with the Image Processing Toolbox and Statistics and Machine Learning Toolbox[cite: 157].
+* **MATLAB** with the Image Processing Toolbox and Statistics and Machine Learning Toolbox[cite: 157].
 * A base document image (`document.jpg`) and a live scene image (`scene_photo.jpg`).
 
 ### Setup Instructions
